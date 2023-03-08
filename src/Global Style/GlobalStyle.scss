@@ -1,3 +1,4 @@
+
 @import 'normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 :root {
@@ -7,17 +8,17 @@
     --infor: #16C7F9;
     --warning: #FFAA05;
     --danger: #DC3545;
+    --textColor: #2F2F3B;
+    --iconColor: rgba(82, 82, 108,0.8);
+  
 }
 html{
-    font-family: 'Inter';
+    
     font-size: 62.5%;
 }
 body {
     font-family: 'Inter';
     font-size: 1.6rem;
+    
 }
 
-*{
-    font-family: 'Inter';
-    font-size: 1.6rem;
-}
