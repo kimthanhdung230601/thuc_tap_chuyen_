@@ -2,15 +2,164 @@
     
 }
 
-.col-custom-3{
-    width: 13.854%;
+.col-custom-3, .col-custom-9{
+    padding: 0;
+    margin: 0;
 }
 
-.col-custom-9{
-    width: 86.146%;
-}
+
 
 .container-wrapper{
-   
+    background-color: #fff;
+    margin: 20px 33px;
+    border-radius: 15px;
+    box-shadow: 0px 9px 20px rgba(46, 35, 94, 0.07);
 }
 
+.container-bg{
+    padding: 43px 32px;
+    overflow: hidden;
+
+}
+
+
+
+.status-wrap{
+    margin-top: 34px;
+}
+
+.status{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.select-option{
+    width: 100%;
+    margin-top: 14px;
+    padding: 18px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--textColor);
+    border-radius: 7px;
+    border: solid 2px rgb(82, 82, 108, 0.3);
+}
+
+.option-item{
+
+    padding: 18px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--textColor);
+}
+
+.status-warn{
+    padding: 33px 14px;
+    margin-top: 33px;
+    border-radius: 15px;
+    font-weight: 600;
+    background-color: rgb(255, 170, 5, 0.15);
+    border: 1px dashed rgba(255, 170, 5, 0.9);
+}
+
+.list-wrapper{
+    padding: 43px 26px;
+    background-color: #FCFCFD;
+    border-radius: 15px;
+    box-shadow: 0px 9px 20px rgba(46, 35, 94, 0.07);
+    border: 2px solid #FFFFFF;
+}
+
+.list-heading{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.list-title{
+
+}
+
+.list-btn{
+    padding: 12px;
+    background-color: var(--primary);
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+}
+
+.list-btn-icon{
+    margin-right: 4px;
+}
+
+.list-btn-name{
+
+}
+
+
+
+
+.list-sub-search{
+
+}
+
+.list-sub-search-name{
+
+}
+
+.list-sub-search-input{
+
+}
+
+.table-custom{
+    margin-top: 20px;
+}
+
+.table-col-heading{
+    
+    color: var(--textColor);
+    font-size: 1.6rem;
+    border: none;
+    text-align: center;
+}
+
+.table-heading{
+    background-color: #F5F6F9;
+  
+}
+
+.table-line-item{
+    padding: 17px 0;
+}
+
+.table-line-item{
+    padding: 17px 0;
+    font-weight: 600;
+  
+}
+
+.table-col{
+    text-align: center;
+
+}
+
+.table-col-item{
+    padding: 10px 0;
+}
+
+.tr {
+    border-bottom: 1px dashed rgb(82, 82, 108, 0.3);
+}
+
+.btn-col{
+    
+    padding: 7px 27px;
+    color: var(--primary);
+    font-weight: 500;
+    background: rgba(115, 102, 255, 0.1);
+    border-radius: 5px;
+    border: none;
+   
+}

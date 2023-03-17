@@ -1,0 +1,47 @@
+.container-heading{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-infor{
+    margin-top: 72px;
+}
+
+.container-infor-wrap{
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-infor-item{
+    margin-bottom: 12px;
+    flex: 1;
+    padding: 0 10px;
+}
+
+.heading-wrap{
+    cursor: pointer;
+}
+
+.infor-name{
+    
+    font-size: 1.8rem;
+}
+
+.infor-input{
+    width: 100%;
+    padding: 8px 4px;
+}
+
+.btn-save{
+    width: 100%;
+    margin-top: 12px;
+   
+    background-color: var(--infor);
+}
+
+span{
+    padding: 0;
+    border: none;
+}
+

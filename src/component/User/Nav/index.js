@@ -30,14 +30,11 @@ function Nav() {
       element[i].classList.remove(cx("active"));
       console.log(i);
     }
-    console.log(document.getElementById(elementId).classList);
-    // document.getElementById(elementId).classList.add(cx("active"));
+    document.getElementById(elementId).classList.add(cx("active"));
   };
   const handleClickSubMenu = (event) => {
     const elementClicked = event.target;
     const elementId = elementClicked.id;
-    console.log("click");
-    console.log(elementId);
     let menuId = `${elementId}-sub-menu`;
     document.getElementById(elementId).classList.toggle(cx("active-btn-down"));
     if (
@@ -89,11 +86,12 @@ function Nav() {
               />
               <div className={cx("nav-item-name")}>Sản phẩm</div>
             </div>
-
-            <div  >
+            <div>
               <FontAwesomeIcon
                 icon={faChevronDown}
                 className={cx("nav-icon", "icon-down")}
+                id="product-btn"
+                onClick={handleClickSubMenu}
               />
             </div>
           </div>
@@ -130,10 +128,12 @@ function Nav() {
               />
               <div className={cx("nav-item-name")}>Lịch sử</div>
             </div>
-            <div id="history-btn" onClick={handleClickSubMenu}>
+            <div>
               <FontAwesomeIcon
                 icon={faChevronDown}
                 className={cx("nav-icon", "icon-down")}
+                id="history-btn"
+                onClick={handleClickSubMenu}
               />
             </div>
           </div>
