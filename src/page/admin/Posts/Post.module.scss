@@ -1,0 +1,46 @@
+.container-btn{
+    margin-top: 32px;
+    display: flex;
+    
+}
+
+.btn-excel{
+    background-color: var(--success);
+}
+
+.btn-add{
+    margin-left: 7px;
+    background-color: var(--infor);
+}
+
+.img-wrap{
+    display: inline-block;
+    width: 140px;
+    height: 250px;
+    overflow: hidden;
+    text-align: center;
+ 
+}
+
+.table-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-delete{
+    background-color: var(--danger);
+}
+
+.btn-edit{
+    margin-top: 4px;
+    background-color: var(--infor);
+}
+
+.table-col-active{
+    padding: 6px 14px;
+    color: #fff;
+    font-size: 1rem;
+    background-color: var(--success);
+    border-radius: 2px;
+}

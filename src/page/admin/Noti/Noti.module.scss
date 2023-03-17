@@ -1,0 +1,41 @@
+.noti-wrap{
+    padding: 20px 20%;
+}
+
+.noti-heading{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: black;
+}
+
+.noti-item{
+    margin-top: 14px;
+}
+
+.noti-name{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.noti-input{
+    padding: 8px 4px;
+    width: 100%;
+}
+
+.noti-btn{
+    padding: 0 20%;
+    text-align: end;
+}
+
+.noti-icon{
+    margin-right: 4px;
+}
+
+.btn-send{
+    background-color: var(--primary);
+}
+
+.btn-cls{
+    margin-left: 4px;
+    background-color: var(--danger);
+}
