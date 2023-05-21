@@ -1,6 +1,7 @@
 import { faSave } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames/bind";
+import { Add, Save } from "../Button";
 import Heading from "../Heading";
 import styles from "./Config.module.scss";
 
@@ -40,10 +41,7 @@ function Config() {
           <textarea className={cx("config-input")} />
         </div>
         <div className={cx("config-btn")}>
-          <button className={cx("btn-wrap", "btn-save")}>
-            <FontAwesomeIcon className={cx("btn-icon")} icon={faSave} />
-            <span className={cx("btn-name")}>Lưu ngay</span>
-          </button>
+          <Save />
         </div>
       </div>
     </>

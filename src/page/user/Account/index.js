@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames/bind";
 import styles from "./Account.module.scss";
 import { Col, Row, Table } from "react-bootstrap";
-import Nav from "../../../component/User/Nav";
+import Nav from "../../../component/Admin/Nav";
 
 const cx = classNames.bind(styles);
 function Account() {

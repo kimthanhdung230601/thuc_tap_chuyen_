@@ -1,0 +1,96 @@
+.container-posts{
+    margin-top: 82px;
+   
+}
+
+
+
+.post-img-wrap{
+    width: 100%;
+    text-align: end;
+    // padding-right: 150px;
+}
+
+.for-input-file{
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    height: 270px;
+    border: 1px dashed #000000;
+    border-radius: 5px;
+    padding: 25px 9px;
+    color: var(--textColor);
+    
+}
+
+.file-icon{
+    color: black;
+    width: 35px;
+}
+
+.post-img{
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.post-infor{
+   margin-left: 25px;
+}
+
+.post-heading{
+    font-size: 2.2rem;
+    color: black;
+    font-weight: 700;
+}
+
+.post-item{
+    display: flex;
+    flex: 1;
+    margin-top: 14px;
+    align-items: center;
+
+}
+
+.post-title{
+    flex: 2;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.post-input{
+    flex: 8;
+    padding: 8px 4px;
+    width: 100%;
+}
+
+.post-item-wrap{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.post-select{
+    width: 50%;
+}
+
+.post-option{
+
+}
+
+.post-btn{
+    margin-top: 30px;
+    text-align: end;
+}
+
+.btn-add{
+    background-color: var(--infor);
+}
+
+.btn-cls{
+    margin-left: 14px;
+    background-color: var(--danger);
+}

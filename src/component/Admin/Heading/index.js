@@ -6,10 +6,10 @@ const cx = classNames.bind(styles);
 function Heading(props) {
   return (
     <>
-      <div className={cx("title")}>
-        <p id={props.id} className="heading">
+      <div className={cx("heading-title")}>
+        <span id={props.id} className="heading" style={props.style}>
           {props.title}
-        </p>
+        </span>
       </div>
     </>
   );

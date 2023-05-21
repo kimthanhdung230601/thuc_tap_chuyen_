@@ -1,16 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, useLocation } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 import GlobalStyle from "./Global Style";
+import Title from "./title";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <GlobalStyle>
-        <App />
+        <Title>
+          <App />
+        </Title>
       </GlobalStyle>
     </BrowserRouter>
   </React.StrictMode>

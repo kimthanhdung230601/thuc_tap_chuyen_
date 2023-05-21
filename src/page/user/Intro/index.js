@@ -1,18 +1,39 @@
-import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faPlay, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames/bind";
+import { useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
 import styles from "./Header.module.scss";
 
 const cx = classNames.bind(styles);
 
 function Intro() {
+  document.title = "Chippisoft";
+  const _handleClickSubmenu = (event) => {
+    let element = event.target.id;
+    console.log(element);
+    if (element === "list") {
+      document.getElementById("list").style.display = "none";
+      document.getElementById("close").style.display = "block";
+      document.getElementById("Header-submenu").style.display = "block";
+      document.getElementById("Header-submenu").classList.remove(cx("close"));
+      document.getElementById("Header-submenu").classList.add(cx("open"));
+    } else if (element === "close") {
+      document.getElementById("list").style.display = "block";
+      document.getElementById("close").style.display = "none";
+      document.getElementById("Header-submenu").classList.remove(cx("open"));
+      document.getElementById("Header-submenu").classList.add(cx("close"));
+      setTimeout(() => {
+        document.getElementById("Header-submenu").style.display = "none";
+      }, 100);
+    }
+  };
   return (
     <>
       <div className={cx("wrapper")}>
         <div className={cx("header")}>
           <ul className={cx("header-list")}>
-            <li className={cx("header-item")}>
+            <li className={cx("header-image")}>
               <img
                 src={require("../../../assets/logo.png")}
                 className={cx("header-img")}
@@ -39,6 +60,27 @@ function Intro() {
             />
             <span className={cx("user-name")}> Username </span>
           </div>
+          <div className={cx("header-icon-wrap")}>
+            <FontAwesomeIcon
+              icon={faBars}
+              className={cx("header-icon")}
+              id="list"
+              onClick={_handleClickSubmenu}
+            />
+            <FontAwesomeIcon
+              icon={faXmark}
+              className={cx("header-icon")}
+              style={{ display: "none" }}
+              id="close"
+              onClick={_handleClickSubmenu}
+            />
+          </div>
+        </div>
+        <div className={cx("header-submenu")} id="Header-submenu">
+          <li className={cx("submenu-item")}>username</li>
+          <li className={cx("submenu-item")}>Sản phẩm</li>
+          <li className={cx("submenu-item")}>Bài viết</li>
+          <li className={cx("submenu-item")}>Nạp tiền</li>
         </div>
         <div className={cx("container")}>
           <div className={cx("container-intro")}>
@@ -98,8 +140,14 @@ function Intro() {
                 của chúng tôi.
               </div>
               <Row className={cx("intro-platform-list")}>
-                <Col>
-                  <div className={cx("intro-platformt")}>
+                <Col
+                  xs={12}
+                  sm={6}
+                  md={6}
+                  lg={3}
+                  className={cx("platform-item")}
+                >
+                  <div className={cx("intro-platform")}>
                     <div className={cx("platformt-img-wrap")}>
                       <img
                         src={require("../../../assets/fb_logo.png")}
@@ -109,8 +157,14 @@ function Intro() {
                     <div className={cx("platformt-name")}>FACEBOOK</div>
                   </div>
                 </Col>
-                <Col className={cx("platform-item")}>
-                  <div className={cx("intro-platformt")}>
+                <Col
+                  xs={12}
+                  sm={6}
+                  md={6}
+                  lg={3}
+                  className={cx("platform-item")}
+                >
+                  <div className={cx("intro-platform")}>
                     <div className={cx("platformt-img-wrap")}>
                       <img
                         src={require("../../../assets/tw_logo.jpg")}
@@ -120,8 +174,14 @@ function Intro() {
                     <div className={cx("platformt-name")}>TWITTER</div>
                   </div>
                 </Col>
-                <Col className={cx("platform-item")}>
-                  <div className={cx("intro-platformt")}>
+                <Col
+                  xs={12}
+                  sm={6}
+                  md={6}
+                  lg={3}
+                  className={cx("platform-item")}
+                >
+                  <div className={cx("intro-platform")}>
                     <div className={cx("platformt-img-wrap")}>
                       <img
                         src={require("../../../assets/ig_logo.jpeg")}
@@ -131,8 +191,14 @@ function Intro() {
                     <div className={cx("platformt-name")}>INSTAGRAM</div>
                   </div>
                 </Col>
-                <Col className={cx("platform-item")}>
-                  <div className={cx("intro-platformt")}>
+                <Col
+                  xs={12}
+                  sm={6}
+                  md={6}
+                  lg={3}
+                  className={cx("platform-item")}
+                >
+                  <div className={cx("intro-platform")}>
                     <div className={cx("platformt-img-wrap")}>
                       <img
                         src={require("../../../assets/tiktok_logo.jpg")}
@@ -256,43 +322,60 @@ function Intro() {
               <div className={cx("su-des", "bg-white")}>
                 Thật dễ dàng so với những gì bạn nghĩ. Chỉ cần 3 bước đơn giản
               </div>
-              <div className={cx("su-step")}>
-                <Col>
-                  <div className={cx("su-step-item")}>
-                    <img
-                      className={cx("su-img")}
-                      src={require("../../../assets/searching.png")}
-                    />
-                    <button className={cx("su-btn")}>
-                      TRUY CẬP TRANG WEB{" "}
-                    </button>
-                    <div className={cx("step-number")}>1</div>
-                  </div>
-                </Col>
-                <Col className={cx("su-item")}>
-                  <div className={cx("su-step-item")}>
-                    <img
-                      className={cx("su-img")}
-                      src={require("../../../assets/login.png")}
-                    />
-                    <button className={cx("su-btn")}>
-                      ĐĂNG NHẬP TÀI KHOẢN{" "}
-                    </button>
-                    <div className={cx("step-number")}>2</div>
-                  </div>
-                </Col>
-                <Col className={cx("su-item")}>
-                  <div className={cx("su-step-item")}>
-                    <img
-                      className={cx("su-img")}
-                      src={require("../../../assets/service.png")}
-                    />
-                    <button className={cx("su-btn")}>TRUY CẬP DỊCH VỤ </button>
-                    <div className={cx("step-number")}>3</div>
-                  </div>
-                </Col>
-              </div>
             </div>
+            <Row className={cx("su-step")}>
+              <Col
+                xs={12}
+                sm={6}
+                xl={3}
+                md={6}
+                lg={4}
+                className={cx("su-item")}
+              >
+                <div className={cx("su-step-item")}>
+                  <img
+                    className={cx("su-img")}
+                    src={require("../../../assets/searching.png")}
+                  />
+                  <button className={cx("su-btn")}>TRUY CẬP TRANG WEB </button>
+                  <div className={cx("step-number")}>1</div>
+                </div>
+              </Col>
+              <Col
+                xs={12}
+                sm={6}
+                xl={3}
+                md={6}
+                lg={4}
+                className={cx("su-item")}
+              >
+                <div className={cx("su-step-item")}>
+                  <img
+                    className={cx("su-img")}
+                    src={require("../../../assets/login.png")}
+                  />
+                  <button className={cx("su-btn")}>ĐĂNG NHẬP TÀI KHOẢN </button>
+                  <div className={cx("step-number")}>2</div>
+                </div>
+              </Col>
+              <Col
+                xs={12}
+                sm={6}
+                xl={3}
+                md={6}
+                lg={4}
+                className={cx("su-item")}
+              >
+                <div className={cx("su-step-item")}>
+                  <img
+                    className={cx("su-img")}
+                    src={require("../../../assets/service.png")}
+                  />
+                  <button className={cx("su-btn")}>TRUY CẬP DỊCH VỤ </button>
+                  <div className={cx("step-number")}>3</div>
+                </div>
+              </Col>
+            </Row>
           </div>
         </div>
       </div>

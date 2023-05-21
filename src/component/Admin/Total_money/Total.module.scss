@@ -1,0 +1,67 @@
+*{
+    // margin: 0;
+    // padding: 0;
+    // box-sizing: border-box;
+}
+.text{
+    // background: transparent;
+}
+.Total {
+  background-color: transparent;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.block-total {
+  margin-top: 15px;
+}
+
+.block-wrap {
+  background: url("../../../assets/bk.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1.73293px solid #ffffff;
+  box-shadow: 0px 7.7982px 17.3293px rgba(46, 35, 94, 0.07);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  padding:3rem 1rem 3rem 1rem;
+
+}
+.title {
+  font-size: 15px;
+  line-height: 24px;
+
+//   padding: 2rem;
+background: transparent;
+  vertical-align: top;
+}
+.quantity {
+  font-size: 22px;
+  line-height: 26px;
+  // background: transparent;
+  // color: #2f2f3b;
+}
+
+.block-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background: linear-gradient(
+    144.16deg,
+    rgba(115, 102, 255, 0.1) 19.06%,
+    rgba(115, 102, 255, 0) 79.03%
+  );
+  border-radius: 100px;
+  padding: 10px;
+  // padding-right: 30px;
+
+}
+.icon {
+  height: 30px;
+  margin: 7px 0px 7px 7px;
+}

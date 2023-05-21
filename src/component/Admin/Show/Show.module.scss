@@ -1,11 +1,13 @@
 .list-sub{
     margin-top: 19px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .list-sub-show{
-    
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .list-sub-title{
@@ -18,5 +20,9 @@
     padding: 10px 11px;
     border: 1px solid #CBCBD3;
     border-radius: 4px;
+}
+
+.list-sub-search-input{
+    margin-left: 27px;
 }
 
